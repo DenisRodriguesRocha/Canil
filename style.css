@@ -26,12 +26,13 @@ header h1 {
     font-size: 2.5em;
 }
 
+
 /* Responsividade das sections */
 section {
     padding: 20px;
     margin: 20px 0;
-    color: white;
-    background-color: #333;
+    color: rgb(255, 255, 255);
+    background-color: #492400;
 }
 
 .about, .puppies, .contact {
@@ -50,10 +51,10 @@ section {
 }
 
 .puppy {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ddd;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
     width: 200px;
 }
@@ -61,7 +62,7 @@ section {
 .puppy img {
     max-width: 100%; /* Responsividade para imagens dos filhotes */
     height: auto; /* Mantém a proporção */
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 /* Formulário de contato */
@@ -74,15 +75,15 @@ section {
 .contact form input, .contact form textarea {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .contact form button {
     padding: 10px;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -90,7 +91,7 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #000000;
     color: white;
 }
 
