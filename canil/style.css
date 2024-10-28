@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Responsividade do header */
+header {
+    
+    background-size: contain; /* Ajuste para que a imagem apareça por completo */
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Responsividade das sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    background-color: #333;
+}
+
+.about, .puppies, .contact {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+}
+
+/* Ajuste da imagem dos filhotes */
+.puppy-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.puppy {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.puppy img {
+    max-width: 100%; /* Responsividade para imagens dos filhotes */
+    height: auto; /* Mantém a proporção */
+    border-radius: 5px;
+}
+
+/* Formulário de contato */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries para tornar o layout responsivo em telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .puppy {
+        width: 100%; /* Cards dos filhotes ocupam toda a largura em telas menores */
+    }
+
+    header h1 {
+        font-size: 2em; /* Reduz o tamanho da fonte no header em telas menores */
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .about, .puppies, .contact {
+        padding: 20px;
+    }
+
+    .contact form input, .contact form textarea {
+        font-size: 0.9em; /* Fonte ajustada para telas menores */
+    }
+}
